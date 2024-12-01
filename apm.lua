@@ -736,6 +736,13 @@ Handlers.add(
         handle_run(UpdateClient, msg)
     end
 )
+Handlers.add(
+    "APM.UpdateClient",
+    Handlers.utils.hasMatchingTag("Action", "APM.UpdateClient"),
+    function(msg)
+        handle_run(UpdateClient, msg)
+    end
+)
 
 ------------------------------------------------------
 
